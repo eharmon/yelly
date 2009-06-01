@@ -1,0 +1,333 @@
+/* 
+lylina news aggregator
+
+Style: modern
+Description: New style for a new age.
+
+Copyright (C) 2004-2005 Panayotis Vryonis
+Copyright (C) 2006 Eric Harmon
+
+lylina is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+lylina is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with lylina; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+
+
+
+/* Global Elements */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #FFF;
+	/* hide from IE5 mac \*/
+ 	height: 100%;
+ 	/* end hack */
+	height: auto;
+	width: 100%;
+	}
+html, body, p, ul, input {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000;
+	font-weight: normal;
+	}
+img, a {
+	border: 0;
+	vertical-align: text-bottom;
+	}
+
+/* Topbar */
+#navigation {
+	/*position: relative;*/
+	/*float: top;*/
+	background: #FFF;
+	color: #000;
+	/*padding: 8px;*/
+	display: block;
+	background: #FFF url(/img/top_bg_g1.png) repeat-x;
+	text-indent: -25%;
+	padding-left: 25%;
+}
+
+#navigation ul, #navigation li {
+	margin-left: 2px;
+}
+
+.spacer {
+}
+
+#navigation {
+	font-size: 13px;
+	color: #80A7FF;
+}
+
+#navigation a {
+	color: #80A7FF;
+	text-decoration: none;
+	padding-right: 4px;
+}
+
+#navigation a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#navigation img {
+	vertical-align: middle;
+}
+
+#navigation li {
+	list-style: none;
+	/*margin-top: 3px;*/
+	margin-top: -10px;
+	padding-left: 100px;
+	border-left: 3px solid #FFF;
+	display: inline;
+	}
+#navigation ul {
+	list-style: none;
+	/*margin-top: 3px;*/
+	margin-left: 3px;
+	padding-left: 3px;
+	display: inline;
+	}
+
+#navigation li.img {
+	margin-top: 2px;
+	}
+#navigation ul li.admin a {
+	color: #990000;
+	margin-left: 3px;
+	}
+	
+#navigation form {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: inline;
+}
+	
+/* Login */
+
+.login {
+	position: relative;
+	vertical-align: middle;
+}
+
+.login input {
+	font-size: 10px;
+}
+
+.login input[type=text], .login input[type=password] {
+	background: #F4F7FE;
+	border:1px solid #333;
+}
+
+.login input[type=text]:hover, .login input[type=text]:focus, .login input[type=password]:hover, .login input[type=password]:focus {
+	background: #FFF;
+}
+
+/* Feed */
+
+.feed { /* Container for items coming from the same feed */ 
+	/* Add styling if you want consequent items from the same feed to look "grouped" */
+}
+
+h1 { /* Date */
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0 4px 15px;
+	border-top: 2px solid #CCC;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	background-image: url(/img/title_bg.png);
+	}
+.item {
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	border-top: 1px solid #DDD;
+	background-color: #FFF;
+	padding-bottom: 2px ;
+	padding-left: 15px;
+	}
+	
+.expanded {
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	border-top: 1px solid #DDD;
+	background-color: #EEE;
+	padding-bottom: 2px ;
+	padding-left: 15px;
+	}						
+
+.item img, .expanded img {
+	margin: 2px 10px 0 0;
+	}
+	
+.bmark { /* Bookmark image */
+	
+	}
+.time { /* Time Posted */
+	margin: 0 4px 0 4px;
+	font-style: italic;
+	color: #999999;
+	}
+.title { /* Title */
+	font-weight: bold;
+	color: #555;
+	text-decoration: none;
+	cursor: pointer;
+	}
+.source { /* Direct link to weblog post */
+	}
+.source a {
+	margin: 0 0 0 10px;
+	color: #990000;
+	text-decoration: none;
+	}
+.excerpt { /* Excerpted content from feed */
+	margin: 3px 0 0 70px;
+	font-size: 11px;
+	width: 90%;
+	display: none;
+	}
+.integration a {
+	text-decoration: none;
+	color: #666666;
+}
+.integration img {
+	margin: 0 0 0 0;
+}
+
+/* Google */
+
+.google {
+	margin: 0 0 0 0;
+	padding: 0px;
+	/* background: #ffffff ; */
+
+}
+.google p { 
+	display: block; 
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #555;
+}
+
+/* del.icio.us */
+.delicious_tags {
+	display: inline;
+	text-align: right;
+	padding: 0 0 0 10px;
+}
+
+/* Panel */
+
+#panel {
+	position: absolute;
+	top: 20px;
+	right: 2px;
+	padding: 10px;
+	background: #EEE;
+	color: #6F6F6F;
+	width: 200px;
+	display: block;
+
+}
+/* Sources */
+
+#sources {
+	padding: 4px;
+	color: #6F6F6F;
+	display: block;
+	border-top: 1px #AAA solid;
+	background: #CBDFEB;
+}
+
+#sources h3 {
+	display: block;
+	margin: 0 0 10px 0;
+	border-bottom: 1px #CBDFEB dotted;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 98%;
+}
+
+#sources ul {
+	list-style-type: square;
+	margin: 10px;
+	padding: 0px;
+}
+
+#sources li {
+	display: inline;
+	padding-left: 1em;
+	padding-bottom: 2px;
+}
+
+#sources ul li img {
+	display: inline;
+	height: 16px;
+	width: 16px;
+	vertical-align: text-bottom;
+}
+
+#sources a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+
+
+/* Edit */
+
+.item ul, .expanded ul {
+	list-style: none;
+	margin: 15px 0 0 0;
+}
+
+.item li, .expanded li {
+	font-size: 12px;
+}
+
+.prefs {
+	float: right;
+	width: 200px;
+	background-color: #FFF;
+	padding: 1em;
+	margin: 1em;
+}
+
+/* Footer */
+
+#footer {
+	margin: 0px;
+	padding-top: 5px;
+	border-top: 1px #C7D0EB solid;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	}
+
+#main {
+	display: block;
+	margin-right: 0px;
+	border-right: 0px #AAA solid;
+}
+
+.feedico {
+	position: relative;
+	float: right;
+}

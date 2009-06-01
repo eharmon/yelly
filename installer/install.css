@@ -1,0 +1,92 @@
+/* 
+lylina news aggregator
+
+Copyright (C) 2004-2005 Panayotis Vryonis
+Copyright (C) 2006 Eric Harmon
+
+lylina is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+lylina is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with lylina; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+.notice {
+	background: #EEE;
+	border: 1px solid #999;
+	padding: 2px;
+	font-size: 10pt;
+	line-height: normal;
+}
+
+.warning {
+	background: #FFFCAC;
+	border: 1px solid #FFF726;
+	padding: 2px;
+	font-size: 10pt;
+	line-height: normal;
+}
+
+.error {
+	background: #DA8C8C;
+	border: 1px solid #E43232;
+	padding: 2px;
+	font-size: 10pt;
+	line-height: normal;
+	font-weight: bold;
+}
+
+.success {
+	background: #AAFD9D;
+	border: 1px solid #36E11A;
+	padding: 2px;
+	font-size: 10pt;
+	line-height: normal;
+}
+
+.main {
+	background: #CCDDFF;
+	border: 1px solid #1F59FF;
+	margin-right: 33%;
+	margin-left: 33%;
+	width: 33%;
+	padding: 5px;
+	line-height: 20pt;
+}
+
+.logo {
+	margin-left: 33%;
+}
+
+input, select {
+	background: #F4F7FE;
+	border: 1px solid #333;
+	float: right;
+	display: inline;
+}
+
+input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, input[type=password]:focus {
+	background: #FFF;
+}
+
+input[type=submit] {
+	border: 2px solid #333;
+	background: #D7FFDB;
+}
+
+.title {
+	border-bottom: 1px dashed #CCC;
+}
