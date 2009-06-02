@@ -13,7 +13,7 @@
 	<script language="JavaScript" type="text/javascript" src="js/jquery-1.3.2.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/jquery-ui-1.7.custom.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/jquery.nextALL.js"></script>
-	<script language="JavaScript" type="text/javascript" src="js/jquery.scrollTo-1.4.0.js"></script>
+	<script language="JavaScript" type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/new.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/{$conf.page_style}" media="screen" />
 	<link rel="stylesheet" type="text/css" href="style/mobile.css" media="handheld" />
