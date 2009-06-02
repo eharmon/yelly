@@ -180,8 +180,8 @@ function setupElements() {
 //	}
 	var old_newest_id = newest_id;
 	$(".item").each(function() {
-		if($(this).attr("id") > newest_id) {
-			newest_id = $(this).attr("id");
+		if(parseInt($(this).attr("id")) > newest_id) {
+			newest_id = parseInt($(this).attr("id"));
 		}
 		if(old_newest_id != 0 && $(this).attr("id") > old_newest_id) {
 			$(this).css("background-color", "#FFFFCC");
