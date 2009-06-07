@@ -174,11 +174,14 @@ foreach($feeds_parse as &$feed) {
 
 curl_multi_close($master_curl);
 
+// Clear the file stat cache so we get good data on feed mirror size changes
+clearstatcache();
+
 // Only works by reference, otherwise last item is duplicated, not sure why
 foreach($feeds_parse as &$feed) {
 //	mysqli_bind_param($statement, "ssi", $data->feed_url
 	if($conf['debug'] == 'true') echo "\n[" . $feed['url'] . " => " . $feed['mirror_url'] . "] ";
-	if($feed['data'] != NULL && filesize("mirror/" . md5($feed['url']) . ".xml") != $filesize) {
+	if($feed['data'] != NULL)  && filesize("mirror/" . md5($feed['url']) . ".xml") != $filesize) {
 		if($conf['debug'] == 'true') echo "#";
 //		$data = new SimplePie($feed['mirror_url']);
 //		$data->set_cache_location(MAGPIE_CACHE_DIR);
