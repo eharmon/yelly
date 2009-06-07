@@ -181,7 +181,7 @@ clearstatcache();
 foreach($feeds_parse as &$feed) {
 //	mysqli_bind_param($statement, "ssi", $data->feed_url
 	if($conf['debug'] == 'true') echo "\n[" . $feed['url'] . " => " . $feed['mirror_url'] . "] ";
-	if($feed['data'] != NULL)  && filesize("mirror/" . md5($feed['url']) . ".xml") != $filesize) {
+	if($feed['data'] != NULL && filesize("mirror/" . md5($feed['url']) . ".xml") != $filesize) {
 		if($conf['debug'] == 'true') echo "#";
 //		$data = new SimplePie($feed['mirror_url']);
 //		$data->set_cache_location(MAGPIE_CACHE_DIR);
